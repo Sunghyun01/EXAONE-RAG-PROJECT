@@ -1,0 +1,90 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+*.log
+logs/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Project Data
+# 실제 문서/파싱 결과/색인 대상은 Git에 올리지 않음
+# =========================
+data/uploads/*
+data/parsed/*
+data/tmp/*
+data/cache/*
+
+# 샘플 문서는 포트폴리오용으로 올릴 수 있으니 제외하지 않음
+!data/samples/
+!data/samples/.gitkeep
+
+# =========================
+# Elasticsearch / Docker Local Data
+# 로컬 볼륨을 바인드 마운트로 쓸 경우 대비
+# =========================
+infra/elasticsearch/data/
+infra/open-webui/data/
+
+# =========================
+# Local Model / Large Files
+# =========================
+*.bin
+*.gguf
+*.safetensors
+*.onnx
+
+# =========================
+# Test / Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
+*.old
