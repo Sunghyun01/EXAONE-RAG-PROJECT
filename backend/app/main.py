@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.api.health import router as health_router
 from app.api.documents import router as documents_router
+from app.api.llm import router as llm_router
 
 app = FastAPI(
     title="EXAONE RAG Project",
@@ -20,3 +21,4 @@ def root():
 
 app.include_router(health_router)
 app.include_router(documents_router)
+app.include_router(llm_router)
